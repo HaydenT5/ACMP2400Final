@@ -16,6 +16,9 @@ jobs:
         run: |
           docker build -t pipeline-test .
 
+      - name: logs
+        run: docker logs app
+
       - name: docker_run
         env:
           DJANGO_SECRET_KEY: $(( secrets.DJANGO_SECRET_KEY ))
