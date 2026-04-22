@@ -12,4 +12,8 @@ jobs:
         run: |
           docker build -t pipeline-test .
       - name: docker_run
-      run:
+      run: |
+       docker run -d -p 8000:8000 -e DJANGO_SECRET_KEY=devpassworddontuseme' pipeline-test
+      - name: 
+      run: |
+        curl: -f http://localhost:8000/
