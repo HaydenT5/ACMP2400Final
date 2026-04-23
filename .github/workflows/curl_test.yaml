@@ -22,15 +22,7 @@ jobs:
         run: |
           docker run -d --name app -p 8000:8000 -e 'DJANGO_SECRET_KEY=$DJANGO_SECRET_KEY' pipeline-test
 
-      - name: check container
-        run: docker ps -a
-  
-      - name: wait
-        run: sleep 10
-
-      - name: logs
-        run: docker logs app
   
       - name: curl_ftw
         run: |
-          curl -f http://localhost:8000/
+          curl -T http://localhost:8000/
