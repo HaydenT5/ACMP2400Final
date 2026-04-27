@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends terraform
 
 WORKDIR /app
 
-COPY terraform/entrypoint.sh .
+COPY entrypoint.sh .
 
 RUN chmod +x /app/entrypoint.sh
 
