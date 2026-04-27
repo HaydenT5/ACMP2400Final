@@ -69,7 +69,7 @@ jobs:
           ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
           ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
         run: |
-          docker build -t application final .
-          docker tage application-final acrhtrotteracmp2400.azurecr.io/final
+          docker build -t application-final .
+          docker tag application-final acrhtrotteracmp2400.azurecr.io/final
           docker login acrhtrotteracmp2400.azurecr.io --username "$ARM_CLIENT_ID" --password "$ARM_CLIENT_SECRET"
           docker push acrhtrotteracmp2400.azurecr.io/final
