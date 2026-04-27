@@ -10,6 +10,7 @@ terraform {
   storage_account_name = "acmp2400finalstorageaccount"
   countainer_name = "big-tf-state-acmp2400"
   use_azuread_auth = true
+  }
 }
 
 provider "azurerm" {
