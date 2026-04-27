@@ -9,7 +9,7 @@ inputs:
     description: 'The azure cleint secret'
     required: true
   ARM_TENANT_ID: 
-   description: 'the azure tenant id'
+    description: 'the azure tenant id'
     required: true
   STATE_KEY: 
     description: 'the unique key for state lookup'
