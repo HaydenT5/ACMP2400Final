@@ -8,6 +8,9 @@ inputs:
   ARM_CLIENT_SECRET:
     description: 'The azure cleint secret'
     required: true
+  ARM_SUBSCRIPTION_ID:
+    description: 'the azure sub'
+    required: true
   ARM_TENANT_ID: 
     description: 'the azure tenant id'
     required: true
