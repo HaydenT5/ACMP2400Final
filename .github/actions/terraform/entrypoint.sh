@@ -11,5 +11,5 @@ cd stage1
 
 
 terraform init -reconfigure -input=false
-terraform plan
-terraform apply --auto-approve
+terraform plan -input=false
+terraform apply --auto-approve -input=false
