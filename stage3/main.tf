@@ -16,10 +16,3 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_container_registry" "htrotter-acr" {
-  name = "acrhtrotteracmp2400"
-  resource_group_name = "rg-htrotter"
-  location = "Central US"
-  sku = "Basic"
-  admin_enabled = false
-}
