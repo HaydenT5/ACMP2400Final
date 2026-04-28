@@ -1,4 +1,4 @@
-name: Build-Curl-Test-Deploy-Test-Underploy
+name: Build-Curl-Test-Deploy-Test-Undeploy
 
 on:
   workflow_dispatch
@@ -109,6 +109,7 @@ jobs:
 
   stage3-the-destroyer:
     needs: pre-eval
+    if: always() 
     runs-on: ubuntu-latest
     steps:
     - name: get_code
