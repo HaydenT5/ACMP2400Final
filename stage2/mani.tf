@@ -54,7 +54,7 @@ resource "azurerm_container_group" "aci-htrotter-acmo" {
   }
 
   image_registry_credential {
-    server = "acrteacheracmp2400.azurecr.io"
+    server = "acrhtrotteracmp2400.azurecr.io"
     username = var.ARM_CLIENT_ID
     password = var.ARM_CLIENT_SECRET
   }
