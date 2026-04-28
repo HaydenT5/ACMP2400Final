@@ -48,8 +48,8 @@ resource "azurerm_container_group" "aci-htrotter-acmp" {
       port     = 8000
       protocol = "TCP"
     }
-    secure_environment_variable{
-        DJANO_SECRET_KEY = var.DJANGO_SECRET_KEY_PROD
+    secure_environment_variables {
+        DJANGO_SECRET_KEY = var.DJANGO_SECRET_KEY_PROD
     }    
   }
 
