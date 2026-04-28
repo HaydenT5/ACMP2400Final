@@ -35,7 +35,7 @@ resource "azurerm_container_group" "aci-htrotter-acmp" {
   location            = "Central US"
   resource_group_name = "rg-htrotter"
   ip_address_type     = "Public"
-  dns_name_label      = "aci-htrotter-acmp"
+  dns_name_label      = "acmp-htrotter-instance"
   os_type             = "Linux"
 
   container {
