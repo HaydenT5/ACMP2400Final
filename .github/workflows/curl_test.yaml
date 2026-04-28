@@ -1,4 +1,4 @@
-name: Build-Curl
+name: Build-Curl-Test-Deploy-Test-Underploy
 
 on:
   workflow_dispatch
