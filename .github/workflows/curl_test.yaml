@@ -102,7 +102,7 @@ jobs:
       - name: get_container_dns
         run: |
           cd stage2/
-          prefix=$(grep 'dns_label_name' main.tf | cut -d '=' -f2 | tr -d '"' | xargs)
+          prefix=$(grep 'dns_name_label' main.tf | cut -d '=' -f2 | tr -d '"' | xargs)
           sleep 50
           echo $prefix
           curl -f http://aci-htrotter-acmp.centralus.azurecontainer.io:8000
