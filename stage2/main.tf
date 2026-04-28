@@ -30,7 +30,7 @@ resource "azurerm_container_registry" "htrotter-acr" {
   admin_enabled = false
 }
 
-resource "azurerm_container_group" "aci-htrotter-acmo" {
+resource "azurerm_container_group" "aci-htrotter-acmp" {
   name                = "aci-htrotter-acmp"
   location            = "Central US"
   resource_group_name = "rg-htrotter"
